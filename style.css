@@ -1,0 +1,117 @@
+body{
+
+    background-color: #f4f4f4;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 0;
+    padding: 0 100px;
+}
+
+#intro{
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+   
+    
+}
+
+
+
+#hero{
+    height: 100vh;
+    width: 100px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+  
+    margin-top: 50px;
+}
+
+#logo{
+    width: 350px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #FCF441;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo h1 ,#main-heading{
+    font-size: 48px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#scroll-down{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    
+
+  
+}
+.container {
+  overflow: hidden;
+  height: 100vh;
+  width: 180px;
+  white-space: nowrap;
+}
+
+.img-section {
+  display: flex;
+    flex-direction: column;
+    gap: 0;
+  
+  width: 100%;
+  height: auto;
+    animation:10s scroll linear infinite;
+}
+
+.scrolling-image {
+   
+}
+.img-container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+   
+
+}
+
+/* //the image should roll like a wheel from the bottom to the top attaching end of the image to start of image */
+
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Add your CSS styles for the 'about' section here */
+#about {
+    height: 100vh;
+    background-color: #eaeaea; /* Example background color */
+}
+.shattered-piece {
+    position: absolute;
+    width: 50px; /* Adjust size of shattered pieces */
+    height: 50px; /* Adjust size of shattered pieces */
+    background-image: url('img1.png'); /* Use the image you want to shatter */
+    background-size: cover;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
